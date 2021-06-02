@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    color: rgb(151, 151, 151);
+}
+
+header {
+    background-color: rgb(45, 57, 69);
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+textarea {
+    min-height: 85px;
+}
+
+.content-2ndField {
+    padding: 4px;
+}
+
+form {
+    max-width: 310px;
+    margin: 10px auto;
+    padding: 5px 9px;
+}
+
+.intro-form {
+    text-align: center;
+}
+
+.intro-form h2 {
+    color: rgb(64, 64, 80);
+    margin-bottom: 1%;
+}
+
+.intro-form p {
+    margin-top: 2%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend span {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: rgb(64, 64, 80);
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+legend {
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.check {
+    display: inline;
+    padding-left: 7px;
+    line-height: 1.7;
+}
+
+#first-hr,
+#second-hr,
+#third-hr {
+    background-color: rgb(64, 64, 80);
+    border: none;
+    margin: 3px 0;
+}
+
+#first-hr {
+    height: 5px;
+}
+
+#second-hr,
+#third-hr {
+    height: 2px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    border: none;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(239, 240, 242);
+    color: rgb(97, 102, 105);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 700;
+    border-radius: 0.3em;
+}
+
+#zip-code {
+    max-width: 155px;
+    width: 50%;
+}
+
+.second-field label {
+    margin-top: 15px;
+}
+
+.second-field legend {
+    margin-bottom: 0px;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: white;
+    background-color: rgb(78, 187, 181);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+}
+
+p span {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 50%;
+}
+
+p {
+    text-align: center;
+}
+
+
+/*===========================================
+GRID
+==========================================*/
+
+.name-l {
+    grid-area: name-l;
+}
+
+.name-i {
+    grid-area: name-i;
+}
+
+.mail-l {
+    grid-area: mail-l;
+}
+
+.mail-i {
+    grid-area: mail-i;
+}
+
+.phone-l {
+    grid-area: phone-l;
+}
+
+.phone-i {
+    grid-area: phone-i;
+}
+
+.adr-l {
+    grid-area: adr-l;
+}
+
+.adr-i {
+    grid-area: adr-i;
+}
+
+.city-l {
+    grid-area: city-l;
+}
+
+.city-i {
+    grid-area: city-i;
+}
+
+.state-l {
+    grid-area: state-l;
+}
+
+.state-s {
+    grid-area: state-s;
+}
+
+.zip-l {
+    grid-area: zip-l;
+}
+
+.zip-i {
+    grid-area: zip-i;
+}
+
+.legend {
+    grid-area: legend;
+}
+
+
+/*===========================================
+GRID
+==========================================*/
+
+@media (min-width:550px) {
+    form {
+        max-width: 500px;
+    }
+    #second-hr {
+        margin-bottom: 33px;
+    }
+    #third-hr {
+        margin-bottom: 33px;
+    }
+    .first-fieldset label {
+        display: inline;
+    }
+    #topics {
+        min-height: 145px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        max-width: 300px;
+    }
+    /* .first-fieldset {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(8, 100px);
+        grid-template-areas: "legend legend" "name-l name-i" "mail-l mail-i" "phone-l phone-i" "adr-l adr-i" "city-l city-i" "state-l satate-s" "zip-l zip-i";
+    } */
+    .content-2ndField {
+        padding: 0px;
+    }
+    header {
+        padding: 0;
+    }
+}

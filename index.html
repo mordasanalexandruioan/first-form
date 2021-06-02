@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1><span>the code review</span></h1>
+        </header>
+
+        <main>
+            <form action="index.html" method="post">
+                <div class="intro-form">
+                    <h2>Signup for our newsletter</h2>
+                    <p>Get the latest news on how your code is doing right in your inbox</p>
+                </div>
+
+                <hr id="first-hr">
+                <hr id="second-hr">
+
+                <fieldset class="first-fieldset">
+
+                    <legend class="legend"><span>contact information</span></legend>
+
+                    <label for="name" class="name-l">Full Name:</label>
+                    <input type="text" class="name-i" placeholder="Required" name="user_name" id="name"> <br>
+
+                    <label for="mail" class="mail-l">Email Adress</label>
+                    <input type="email" class="mail-i" placeholder="Required" name="user_email" id="mail"> <br>
+
+                    <label for="phone" class="phone-l">Phone Number</label>
+                    <input type="tel" class="phone-i" name="user_phone" id="phone"> <br>
+
+                    <label for="street-adr" class="adr-l">Street Adress</label>
+                    <input type="text" class="adr-i" name="user_street_adress" id="street-adr"> <br>
+
+                    <label for="city" class="city-l">City</label>
+                    <input type="text" class="city-i" name="user_city" id="city"> <br>
+
+                    <label for="state" class="state-l">Satate</label>
+                    <select name="user_state" id="state" class="state-s">
+                    <option value="romania">Romania</option>
+                    <option value="united-kingdom">United Kingdom</option>
+                    <option value="france">France</option>
+                </select> <br>
+
+                    <label for="zip-code" class="zip-l">Zip Code</label>
+                    <input type="text" class="zip-i" name="user_zip" id="zip-code">
+                </fieldset>
+
+                <hr id="third-hr">
+
+                <fieldset class="second-field">
+                    <legend><span>Newsletter</span></legend>
+
+                    <div class="content-2ndField">
+                        <label>Select the newsletter you wolud like to receive</label>
+                        <input type="checkbox" value="html-news" name="user_news-html" id="html"><label for="html" class="check">HTML news</label> <br>
+                        <input type="checkbox" value="css-news" name="user_news-css" id="css"><label for="css" class="check">CSS news</label> <br>
+                        <input type="checkbox" value="js-news" name="user_news-js" id="js"><label for="js" class="check">JavaScript news</label>
+
+                        <label>Newsletter format</label>
+                        <input type="radio" value="html-format" name="user_format" id="format-html"><label for="format" class="check">HTML</label> <br>
+                        <input type="radio" value="plain-text" name="user_format" id="format-plain"><label for="format-plain" class="check">Plain text</label>
+
+                        <label>Other topics you'd like to hear about</label>
+                        <textarea name="user_topics" id="topics"></textarea>
+                    </div>
+
+                </fieldset>
+
+                <button type="submit">Sign Up</button>
+
+                <p><span>copyright the code review</span></p>
+            </form>
+        </main>
+    </div>
+
+
+</body>
+
+</html>
