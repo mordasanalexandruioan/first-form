@@ -30,23 +30,35 @@
 
                     <legend class="legend"><span>contact information</span></legend>
 
-                    <label for="name" class="name-l">Full Name:</label>
-                    <input type="text" class="name-i" placeholder="Required" name="user_name" id="name"> <br>
+                    <div class="card">
+                        <label for="name" class="name-l">Full Name:</label>
+                        <input type="text" class="name-i" placeholder="Required" name="user_name" id="name">
+                    </div>
 
-                    <label for="mail" class="mail-l">Email Adress</label>
-                    <input type="email" class="mail-i" placeholder="Required" name="user_email" id="mail"> <br>
+                    <div class="card">
+                        <label for="mail" class="mail-l">Email Adress</label>
+                        <input type="email" class="mail-i" placeholder="Required" name="user_email" id="mail">
+                    </div>
 
-                    <label for="phone" class="phone-l">Phone Number</label>
-                    <input type="tel" class="phone-i" name="user_phone" id="phone"> <br>
+                    <div class="card">
+                        <label for="phone" class="phone-l">Phone Number</label>
+                        <input type="tel" class="phone-i" name="user_phone" id="phone">
+                    </div>
 
-                    <label for="street-adr" class="adr-l">Street Adress</label>
-                    <input type="text" class="adr-i" name="user_street_adress" id="street-adr"> <br>
+                    <div class="card">
+                        <label for="street-adr" class="adr-l">Street Adress</label>
+                        <input type="text" class="adr-i" name="user_street_adress" id="street-adr">
+                    </div>
 
-                    <label for="city" class="city-l">City</label>
-                    <input type="text" class="city-i" name="user_city" id="city"> <br>
 
-                    <label for="state" class="state-l">Satate</label>
-                    <select name="user_state" id="state" class="state-s">
+                    <div class="card">
+                        <label for="city" class="city-l">City</label>
+                        <input type="text" class="city-i" name="user_city" id="city">
+                    </div>
+
+                    <div class="card">
+                        <label for="state" class="state-l">Satate</label>
+                        <select name="user_state" id="state" class="state-s">
                         <option value="" disabled selected hidden>Select..</option>
                     <option value="romania">Romania</option>
                     <option value="united-kingdom">United Kingdom</option>
@@ -60,10 +72,14 @@
                     <option value="switzerland">Switzerland</option>
                     <option value="russia">Russia</option>
                     <option value="greece">Greece</option>
-                </select> <br>
+                     </select>
+                    </div>
 
-                    <label for="zip-code" class="zip-l">Zip Code</label>
-                    <input type="text" class="zip-i" name="user_zip" id="zip-code">
+                    <div class="card-zip">
+                        <label for="zip-code" class="zip-l">Zip Code</label>
+                        <input type="text" class="zip-i" name="user_zip" id="zip-code">
+                    </div>
+
                 </fieldset>
 
                 <hr id="third-hr">

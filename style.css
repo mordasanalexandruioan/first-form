@@ -221,6 +221,12 @@ GRID
     grid-area: legend;
 }
 
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    text-align: right;
+    opacity: 50%;
+}
+
 
 /*===========================================
 GRID
@@ -262,5 +268,17 @@ GRID
     }
     .intro-form h2 {
         font-size: 1.8rem;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-zip {
+        display: flex;
+        flex-direction: row;
+    }
+    .card-zip input {
+        margin-left: 110px;
     }
 }
