@@ -260,4 +260,7 @@ GRID
     header {
         padding: 0;
     }
+    .intro-form h2 {
+        font-size: 1.8rem;
+    }
 }
